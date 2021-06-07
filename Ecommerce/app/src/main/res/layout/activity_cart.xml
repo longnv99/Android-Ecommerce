@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CartActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/cart_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Giỏ hàng" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:id="@+id/rev_cart"
+        app:layout_constraintTop_toBottomOf="@+id/cart_toolbar"
+        android:padding="10dp"
+        tools:listitem="@layout/cart_item"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        android:background="#DFDFDF">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txtcarttotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng tiền: "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:fontFamily="@font/amethysta"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/cart_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 đ"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#F44336"
+            android:fontFamily="@font/amethysta"
+            android:layout_toRightOf="@+id/txtcarttotal"
+            android:layout_centerInParent="true"
+            />
+        <Button
+            android:paddingHorizontal="5dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Mua hàng"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/amethysta"
+            android:background="#FF5722"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/payment_cart"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:background="#C6C6C6"
+    app:cardCornerRadius="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_margin="5dp">
+        <TextView
+            android:id="@+id/time_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amethysta"/>
+        <TextView
+            android:id="@+id/name_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sản phẩm"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amethysta"/>
+        <TextView
+            android:id="@+id/type_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hình thức thanh toán"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amethysta"/>
+        <TextView
+            android:id="@+id/total_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng số tiền thanh toán"
+            android:textSize="20dp"
+            android:textColor="#F44336"
+            android:fontFamily="@font/amethysta"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

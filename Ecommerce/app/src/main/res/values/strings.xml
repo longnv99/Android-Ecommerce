@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ecommerce</string>
+
+    <string name="first_slide">Mua hàng trực tuyến</string>
+    <string name="second_slide">Thanh toán nhanh chóng</string>
+    <string name="third_slide">Mẫu mã đa dạng</string>
+
+    <string name="description">Hệ thống bán lẻ trực tuyến</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

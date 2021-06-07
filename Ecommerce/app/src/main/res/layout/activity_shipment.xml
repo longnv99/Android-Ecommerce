@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ShipmentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ship_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Hình thức vận chuyển" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        app:layout_constraintTop_toBottomOf="@+id/ship_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đơn vị vận chuyển"
+            android:textSize="17dp"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rd_best"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BEST Express - 32000 đ"
+                android:checked="true"
+                android:buttonTint="#FF5722"
+                />
+            <RadioButton
+                android:id="@+id/rd_ghtk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giao hàng tiết kiệm - 35000 đ"
+                android:buttonTint="#FF5722"/>
+            <RadioButton
+                android:id="@+id/rd_jt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JT Express - 33000 đ"
+                android:buttonTint="#FF5722"/>
+        </RadioGroup>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiếp tục..."
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/amethysta"
+        android:id="@+id/btnSaveShip"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/card"
+        android:background="@drawable/button_custom"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
